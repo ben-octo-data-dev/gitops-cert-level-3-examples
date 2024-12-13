@@ -12,6 +12,8 @@ spec:
         owner: ben-octo-data-dev
         repo: gitops-cert-level-3-examples
       requeueAfterSeconds: 180
+        labels:
+        - preview
   template:
     metadata:
       name: 'myapp-{{.branch}}'
